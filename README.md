@@ -2,6 +2,10 @@
 
 This is a simple tmux configuration enabling to have arbitrarily many nested tmux sessions.
 
+# Installation
+'cd'
+'wget https://github.com/its-ashu-otf/my_tmux_configuration/blob/main/.tmux.conf'
+
 # Shortcuts
 
 * `Ctrl + a`: My prefix key
