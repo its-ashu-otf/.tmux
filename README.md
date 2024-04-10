@@ -7,7 +7,7 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 ```bash
 mkdir ~/.tmux.conf.d/
 cd ~/.tmux.conf.d/
-git clone https://github.com/aleclearmind/nested-tmux.git
+git clone https://github.com/its-ashu-otf/my_tmux_configuration.git
 mv ~/.tmux.conf ~/.tmux.conf.backup
 echo "source ~/.tmux.conf.d/nested-tmux/active-row.conf" > ~/.tmux.conf
 tmux
