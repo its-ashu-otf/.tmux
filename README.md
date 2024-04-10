@@ -5,7 +5,7 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 # Installation
 
 ```bash
- mkdir ~/.tmux.conf.d/
+mkdir ~/.tmux.conf.d/
 cd ~/.tmux.conf.d/
 git clone https://github.com/aleclearmind/nested-tmux.git
 mv ~/.tmux.conf ~/.tmux.conf.backup
