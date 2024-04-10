@@ -4,14 +4,14 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 
 # Installation
 
-`
-mkdir ~/.tmux.conf.d/`
-`cd ~/.tmux.conf.d/`
-`git clone https://github.com/aleclearmind/nested-tmux.git`
-`mv ~/.tmux.conf ~/.tmux.conf.backup`
-`echo "source ~/.tmux.conf.d/nested-tmux/active-row.conf" > ~/.tmux.conf`
-`tmux
-`
+```bash
+ mkdir ~/.tmux.conf.d/
+cd ~/.tmux.conf.d/
+git clone https://github.com/aleclearmind/nested-tmux.git
+mv ~/.tmux.conf ~/.tmux.conf.backup
+echo "source ~/.tmux.conf.d/nested-tmux/active-row.conf" > ~/.tmux.conf
+tmux
+```
 
 
 # Shortcuts
