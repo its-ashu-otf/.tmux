@@ -5,12 +5,8 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 # Installation
 
 ```bash
-mkdir ~/.tmux.conf.d/
-cd ~/.tmux.conf.d/
-git clone https://github.com/its-ashu-otf/my_tmux_configuration.git
-mv ~/.tmux.conf ~/.tmux.conf.backup
-echo "source ~/.tmux.conf.d/my_tmux_configuration/active-row.conf" > ~/.tmux.conf
-tmux
+cd
+wget https://raw.githubusercontent.com/its-ashu-otf/my_tmux_configuration/test/.tmux.conf
 ```
 
 
@@ -20,7 +16,7 @@ tmux
 * `Ctrl + a, Ctrl + c` or `Ctrl + t`: create a new window
 * `Ctrl + a, Ctrl + s`: create a new nested tmux session and ask a name for it
 * `Ctrl + a, Ctrl + A`: switch to last window
-* `Ctrl + a, Ctrl + f`: find session
+* `Ctrl + a, Ctrl + f`: find all active session
 * `Ctrl + a, A`: rename current window
 * `Alt + Right`: move to the next window of the current row
 * `Alt + Left`: move to the previous window of the current row
