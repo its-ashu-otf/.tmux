@@ -6,7 +6,7 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 
 ```bash
 cd
-wget https://raw.githubusercontent.com/its-ashu-otf/my_tmux_configuration/test/.tmux.conf
+wget https://raw.githubusercontent.com/its-ashu-otf/Versitile_Tmux/test/.tmux.conf
 ```
 
 
