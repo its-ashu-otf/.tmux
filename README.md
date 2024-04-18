@@ -1,5 +1,4 @@
-# my_tmux
-
+# Versitile Tmux
 This is a simple tmux configuration enabling to have arbitrarily many nested tmux sessions.
 
 # Installation
