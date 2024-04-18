@@ -1,5 +1,4 @@
-# my_tmux
-
+# Versitile Tmux
 This is a simple tmux configuration enabling to have arbitrarily many nested tmux sessions.
 
 # Installation
@@ -15,12 +14,11 @@ tmux
 
 
 # Shortcuts
-
+* `Ctrl + x`: Kill the server
 * `Ctrl + a`: My prefix key
-* `Ctrl + a, Ctrl + c` or `Ctrl + t`: create a new window
-* `Ctrl + a, Ctrl + s`: create a new nested tmux session and ask a name for it
-* `Ctrl + a, Ctrl + A`: switch to last window
-* `Ctrl + a, Ctrl + f`: find session
+* `Ctrl + t`: create a new window
+* `Ctrl + a, Ctrl + s`: create a new nested tmux session
+* `Ctrl + a, Ctrl + f`: list all sessions
 * `Ctrl + a, A`: rename current window
 * `Alt + Right`: move to the next window of the current row
 * `Alt + Left`: move to the previous window of the current row
