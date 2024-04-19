@@ -7,7 +7,7 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 
 ```bash
 cd
-https://github.com/its-ashu-otf/.tmux.git
+git clone https://github.com/its-ashu-otf/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 ```
