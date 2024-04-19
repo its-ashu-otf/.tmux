@@ -7,9 +7,9 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 
 ```bash
 cd
-git clone https://github.com/its-ashu-otf/.Tmux.git
-ln -s -f .Tmux/.tmux.conf
-cp .Tmux/.tmux.conf.local .
+git clone https://github.com/its-ashu-otf/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
 ```
 
 # Shortcuts
