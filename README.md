@@ -4,14 +4,9 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 # Installation
 
 ```bash
-mkdir ~/.tmux.conf.d/
-cd ~/.tmux.conf.d/
-git clone https://github.com/its-ashu-otf/my_tmux_configuration.git
-mv ~/.tmux.conf ~/.tmux.conf.backup
-echo "source ~/.tmux.conf.d/my_tmux_configuration/active-row.conf" > ~/.tmux.conf
-tmux
+cd
+wget https://raw.githubusercontent.com/its-ashu-otf/Versitile_Tmux/test/.tmux.conf
 ```
-
 
 # Shortcuts
 * `Ctrl + x`: Kill the server
@@ -24,4 +19,5 @@ tmux
 * `Alt + Left`: move to the previous window of the current row
 * `Alt + Up`: move to the inner tmux session
 * `Alt + Down`: move to the outer tmux session
+
 
