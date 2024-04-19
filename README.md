@@ -6,10 +6,10 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 # Installing in `~`:
 
 ```bash
-cd
-git clone https://github.com/its-ashu-otf/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
+$ cd
+$ git clone https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .
 ```
 
 # Shortcuts
