@@ -1,15 +1,19 @@
 # Versitile Tmux
 This is a simple tmux configuration enabling to have arbitrarily many nested tmux sessions.
 
-# Installation
+# Installing in `~`:
 
 ```bash
 cd
-wget https://raw.githubusercontent.com/its-ashu-otf/Versitile_Tmux/test/.tmux.conf
+git clone https://github.com/its-ashu-otf/.Tmux.git
+ln -s -f .Tmux/.tmux.conf
+cp .Tmux/.tmux.conf.local .
 ```
 
 # Shortcuts
-* `Ctrl + x`: Kill the server
+* `Ctrl + d`: Kill the current active window & pane
+* `Ctrl + shift + c`: copy to os clipboard
+* `Ctrl + shift + v`: paste to os clipboard
 * `Ctrl + a`: My prefix key
 * `Ctrl + t`: create a new window
 * `Ctrl + a, Ctrl + s`: create a new nested tmux session
