@@ -1,5 +1,5 @@
 # Versitile Tmux
-This is a simple tmux configuration enabling to have arbitrarily many nested tmux sessions.
+This is a simple tmux configuration enabling to have arbitrarily many tmux sessions with fast and easy accesibility.
 
 ![tmux-logo-large](https://github.com/its-ashu-otf/.Tmux/assets/85825366/602ebf43-2f0e-45e0-bd4d-1245823223fa)
 
