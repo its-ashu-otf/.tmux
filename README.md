@@ -13,7 +13,7 @@ cp .tmux/.tmux.conf.local .
 ```
 
 
-## Environment Variables
+## Copy/Paste to OS Clipboard
 
 To make clipboard copy/paste to os clipboard, Install ` xclip`
 
