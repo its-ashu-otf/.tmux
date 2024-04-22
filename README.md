@@ -3,7 +3,7 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 
 ![tmux-logo-large](https://github.com/its-ashu-otf/.Tmux/assets/85825366/602ebf43-2f0e-45e0-bd4d-1245823223fa)
 
-# Installing in `~`:
+## Installation
 
 ```bash
 cd
@@ -11,6 +11,24 @@ git clone https://github.com/its-ashu-otf/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 ```
+
+
+## Environment Variables
+
+To make clipboard copy/paste to os clipboard, Install ` xclip`
+
+To Install: 
+
+`sudo apt update && sudo apt install xclip -y`
+
+
+## Features
+
+- Makes tmux using a bit friendly :)
+- Navigating is easier
+- Easy and fast session change
+- Cross platform clipboard copy paste works
+
 
 # Shortcuts
 * `Ctrl + d`: Kill the current active window & pane
