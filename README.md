@@ -22,6 +22,16 @@ To Install:
 `sudo apt update && sudo apt install xclip -y`
 
 
+## Start Tmxu simultaneosly with Terminal
+
+Add this command to your terminal profile 
+
+```bash
+
+/usr/bin/zsh -ilc "tmux attach || tmux new"
+
+```
+
 ## Features
 
 - Makes tmux using a bit friendly :)
