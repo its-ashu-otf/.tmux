@@ -6,23 +6,10 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 ## Installation
 
 ```bash
-cd
-git clone https://github.com/its-ashu-otf/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/its-ashu-otf/.tmux/main/setup_tmux.sh)"
 ```
 
-
-## Copy/Paste to OS Clipboard
-
-To make clipboard copy/paste to os clipboard, Install ` xclip`
-
-To Install: 
-
-`sudo apt update && sudo apt install xclip -y`
-
-
-## Start Tmxu simultaneosly with Terminal
+## To Start Tmux simultaneosly with Terminal
 
 Add this command to your terminal profile 
 
