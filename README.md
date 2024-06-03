@@ -14,9 +14,7 @@ bash -c "$(curl --fail --show-error --silent --location https://raw.githubuserco
 Add this command to your terminal profile 
 
 ```bash
-
 /usr/bin/zsh -ilc "tmux attach || tmux new"
-
 ```
 
 ## Features
@@ -28,17 +26,20 @@ Add this command to your terminal profile
 
 
 # Shortcuts
+
+* `Ctrl + a, z`: Zoom in/out in current window
 * `Ctrl + d`: Kill the current active window & pane
 * `Ctrl + shift + c`: copy to os clipboard
 * `Ctrl + shift + v`: paste to os clipboard
 * `Ctrl + a`: My prefix key
 * `Ctrl + t`: create a new window
-* `Ctrl + a, Ctrl + s`: create a new nested tmux session
-* `Ctrl + a, Ctrl + f`: list all sessions
+* `Ctrl + a, s`: create a new nested tmux session
+* `Ctrl + a, f`: Find windows
 * `Ctrl + a, A`: rename current window
 * `Alt + Right`: move to the next window of the current row
 * `Alt + Left`: move to the previous window of the current row
 * `Alt + Up`: move to the inner tmux session
 * `Alt + Down`: move to the outer tmux session
+
 
 
