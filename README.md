@@ -6,7 +6,7 @@ This is a simple tmux configuration enabling to have arbitrarily many tmux sessi
 ## Installation
 
 ```bash
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/its-ashu-otf/.tmux/main/setup_tmux.sh)"
+curl -fsSL https://raw.githubusercontent.com/its-ashu-otf/.tmux/main/setup_tmux.sh | bash"
 ```
 
 ## To Start Tmux simultaneosly with Terminal
