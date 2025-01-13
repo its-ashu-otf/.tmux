@@ -16,6 +16,11 @@ Add this command to your terminal profile
 ```bash
 /usr/bin/zsh -ilc "tmux attach || tmux new"
 ```
+For Qterminal in Kali-Linux
+
+```bash
+qterminal -e "zsh -ilc 'tmux attach || tmux new'"
+```
 
 ## Features
 
