@@ -1,7 +1,9 @@
 #!/bin/bash
-# Versitile Tmux ❤️
+# Versitile Tmux 
+# 💛🩷💙🖤❤️🤍
 # A script to install "Versitile Tmux configuration
-# 
+# A config for tmux that is versatile, highly customizable, and easy to use.
+# Made with ❤️ by Ashu 
 # ------------------------------------------------------------------------------
 {
 if [ ${EUID:-$(id -u)} -eq 0 ]; then
@@ -88,7 +90,7 @@ install() {
   printf '✅ Using %s\n' "${TMUX_CONF_LOCAL/#"$HOME"/'~'}" >&2
 
   printf '\n'
-  VERSITILE_TMUX_REPOSITORY=${VERSITILE_TMUX_REPOSITORY:-https://github.com/gpakosz/.tmux.git}
+  VERSITILE_TMUX_REPOSITORY=${VERSITILE_TMUX_REPOSITORY:-https://github.com/its-ashu-otf/.tmux.git}
   printf '⬇️  Cloning Versitile Tmux repository...\n' >&2
   if ! is_true "$DRY_RUN"; then
     if ! git clone -q --single-branch "$VERSITILE_TMUX_REPOSITORY" "$VERSITILE_TMUX_CLONE_PATH"; then
@@ -139,7 +141,7 @@ if [ -p /dev/stdin ]; then
     self() {
       printf '# Versitile Tmux\n'
       printf '# 💛🩷💙🖤❤️🤍\n'
-      printf '# https://github.com/gpakosz/.tmux\n'
+      printf '# https://github.com/its-ashu-otf/.tmux\n'
       printf '\n'
 
       declare -f install

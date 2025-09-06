@@ -452,6 +452,70 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-continuum'
 #set -g @continuum-restore 'on'
 
+# -- Themes --------------------------------------------------------------------
+
+# Catppuccin Theme
+# set -g @plugin 'catppuccin/tmux#v2.1.3'
+# set -g @catppuccin_flavor 'mocha' # latte, frappe, macchiato or mocha
+
+# Nord Theme
+# set -g @plugin "nordtheme/tmux"
+
+# Dracula Theme 
+# set -g @plugin 'dracula/tmux' 
+
+# Tokyo Night Theme
+# set -g @plugin 'fabioluciano/tmux-tokyo-night'
+
+# Kanagawa Theme
+# set -g @plugin 'Nybkox/tmux-kanagawa'
+
+# minimal theme
+# set -g @plugin 'niksingh710/minimal-tmux-status'
+
+# rose pine theme
+# set -g @plugin 'rose-pine/tmux'
+# set -g @rose_pine_variant 'main' # Options are 'main', 'moon' or 'dawn'
+
+# nova theme
+# set -g @plugin 'o0th/tmux-nova'
+
+# Tmux-ThemePack
+# --- Basic ---
+# set -g @themepack 'basic'
+
+# --- Powerline Default ---
+# set -g @themepack 'powerline/default/blue'
+# set -g @themepack 'powerline/default/cyan'
+# set -g @themepack 'powerline/default/gray'
+# set -g @themepack 'powerline/default/green'
+# set -g @themepack 'powerline/default/magenta'
+# set -g @themepack 'powerline/default/orange'
+# set -g @themepack 'powerline/default/purple'
+# set -g @themepack 'powerline/default/red'
+# set -g @themepack 'powerline/default/yellow'
+
+# --- Powerline Block ---
+# set -g @themepack 'powerline/block/blue'
+# set -g @themepack 'powerline/block/cyan'
+# set -g @themepack 'powerline/block/gray'
+# set -g @themepack 'powerline/block/green'
+# set -g @themepack 'powerline/block/magenta'
+# set -g @themepack 'powerline/block/orange'
+# set -g @themepack 'powerline/block/purple'
+# set -g @themepack 'powerline/block/red'
+# set -g @themepack 'powerline/block/yellow'
+
+# --- Powerline Double ---
+# set -g @themepack 'powerline/double/blue'
+# set -g @themepack 'powerline/double/cyan'
+# set -g @themepack 'powerline/double/green'
+# set -g @themepack 'powerline/double/magenta'
+# set -g @themepack 'powerline/double/orange'
+# set -g @themepack 'powerline/double/purple'
+# set -g @themepack 'powerline/double/red'
+# set -g @themepack 'powerline/double/yellow'
+
 
 # -- custom variables ----------------------------------------------------------
 
