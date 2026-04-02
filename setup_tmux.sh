@@ -14,9 +14,52 @@ if [ -z "$BASH_VERSION" ]; then
   printf '❌ This installation script requires bash\n' >&2 && exit 1
 fi
 
-if ! tmux -V >/dev/null 2>&1; then
-  printf '❌ tmux is not installed\n' >&2 && exit 1
-fi
+# Function to install tmux across different Linux distributions
+install_tmux() {
+  if tmux -V >/dev/null 2>&1; then
+    return 0
+  fi
+
+  printf '📦 tmux is not installed. Attempting cross-distro installation...\n' >&2
+
+  if ! command -v sudo >/dev/null 2>&1; then
+    printf '❌ sudo is required to install packages automatically. Please install tmux manually.\n' >&2
+    exit 1
+  fi
+
+  if command -v apt-get >/dev/null 2>&1; then
+    printf '▶️  Detected Debian/Ubuntu base (apt-get)\n' >&2
+    sudo apt-get update && sudo apt-get install -y tmux
+  elif command -v dnf >/dev/null 2>&1; then
+    printf '▶️  Detected Fedora/RHEL base (dnf)\n' >&2
+    sudo dnf install -y tmux
+  elif command -v pacman >/dev/null 2>&1; then
+    printf '▶️  Detected Arch base (pacman)\n' >&2
+    sudo pacman -Sy --noconfirm tmux
+  elif command -v zypper >/dev/null 2>&1; then
+    printf '▶️  Detected openSUSE base (zypper)\n' >&2
+    sudo zypper install -y tmux
+  elif command -v yum >/dev/null 2>&1; then
+    printf '▶️  Detected older RHEL/CentOS base (yum)\n' >&2
+    sudo yum install -y tmux
+  elif command -v apk >/dev/null 2>&1; then
+    printf '▶️  Detected Alpine base (apk)\n' >&2
+    sudo apk add tmux
+  else
+    printf '❌ Could not detect a supported package manager. Please install tmux manually.\n' >&2
+    exit 1
+  fi
+
+  # Verify installation succeeded
+  if ! tmux -V >/dev/null 2>&1; then
+    printf '❌ Failed to install tmux automatically. Please install it manually.\n' >&2
+    exit 1
+  fi
+  printf '✅ tmux installed successfully.\n\n' >&2
+}
+
+# Run the tmux installation check
+install_tmux
 
 is_true() {
   case "$1" in
@@ -119,10 +162,10 @@ install() {
     printf '\n' >&2
     printf '⚠️  Installed Versitile Tmux while tmux was running...\n' >&2
     printf '→ Existing sessions have outdated environment variables\n' >&2
-    printf '  • TMUX_CONF\n' >&2
-    printf '  • TMUX_CONF_LOCAL\n' >&2
-    printf '  • TMUX_PROGRAM\n' >&2
-    printf '  • TMUX_SOCKET\n' >&2
+    printf '  • TMUX_CONF\n' >&2
+    printf '  • TMUX_CONF_LOCAL\n' >&2
+    printf '  • TMUX_PROGRAM\n' >&2
+    printf '  • TMUX_SOCKET\n' >&2
     printf '→ Some other things may not work 🤷\n' >&2
   fi
 
